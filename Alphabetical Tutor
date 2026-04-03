@@ -1,0 +1,48 @@
+# Alphabetical Tutor (A–Z)
+
+alphabet_words = {
+    "a": ["Apple", "Ant", "Aeroplane", "Animal", "Arrow"],
+    "b": ["Ball", "Bat", "Banana", "Book", "Boy"],
+    "c": ["Cat", "Car", "Cow", "Cup", "Cake"],
+    "d": ["Dog", "Duck", "Door", "Drum", "Doll"],
+    "e": ["Elephant", "Egg", "Earth", "Eagle", "Engine"],
+    "f": ["Fish", "Fan", "Flower", "Flag", "Frog"],
+    "g": ["Goat", "Gun", "Grapes", "Glass", "Girl"],
+    "h": ["Hat", "Hen", "Horse", "House", "Hand"],
+    "i": ["Ice", "Ink", "Iron", "Insect", "Island"],
+    "j": ["Jug", "Jam", "Jeep", "Jacket", "Juice"],
+    "k": ["Kite", "Key", "King", "Knife", "Kangaroo"],
+    "l": ["Lion", "Lamp", "Leaf", "Lemon", "Lock"],
+    "m": ["Monkey", "Mango", "Milk", "Mouse", "Moon"],
+    "n": ["Nest", "Net", "Nose", "Night", "Notebook"],
+    "o": ["Orange", "Owl", "Ocean", "Ox", "Onion"],
+    "p": ["Parrot", "Pen", "Pencil", "Pumpkin", "Phone"],
+    "q": ["Queen", "Question", "Quill", "Quick", "Quiet"],
+    "r": ["Rat", "Rose", "Ring", "Rabbit", "Road"],
+    "s": ["Sun", "Star", "Ship", "Snake", "School"],
+    "t": ["Tiger", "Table", "Train", "Tree", "Tomato"],
+    "u": ["Umbrella", "Uniform", "Unicorn", "Urn", "Useful"],
+    "v": ["Van", "Violin", "Vegetable", "Village", "Voice"],
+    "w": ["Watch", "Water", "Whale", "Window", "World"],
+    "x": ["X-ray", "Xylophone", "Xenon"],
+    "y": ["Yak", "Yellow", "Yarn", "Yogurt", "Youth"],
+    "z": ["Zebra", "Zoo", "Zero", "Zip", "Zone"]
+}
+
+print("🔤 Alphabetical Tutor (A–Z)")
+print("Type a letter (a-z) or type 'exit' to quit\n")
+
+while True:
+    letter = input("Enter a letter: ").lower()
+
+    if letter == "exit":
+        print("👋 Thank you for learning!")
+        break
+
+    if letter in alphabet_words:
+        print(f"📘 Words starting with '{letter.upper()}':")
+        for word in alphabet_words[letter]:
+            print("•", word)
+        print()
+    else:
+        print("❌ Please enter a valid letter (a–z)\n")
